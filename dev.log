@@ -1,0 +1,59 @@
+
+> uim-website@0.1.0 dev
+> next dev --webpack
+
+▲ Next.js 16.2.9 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.105:3000
+- Environments: .env.local
+✓ Ready in 3.6s
+
+○ Compiling / ...
+ GET / 200 in 43s (next.js: 41s, application-code: 2.4s)
+[contact] sent: b06c176a-71d9-4066-bbd9-249e6f229767
+ POST /api/contact 200 in 43s (next.js: 41s, application-code: 2.8s)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+ GET / 200 in 782ms (next.js: 82ms, application-code: 699ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[contact] sent: 215f935d-9199-4431-bc97-04e07c60f73b
+ POST /api/contact 200 in 909ms (next.js: 15ms, application-code: 894ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+ GET / 200 in 1002ms (next.js: 664ms, application-code: 338ms)
+ GET / 200 in 743ms (next.js: 42ms, application-code: 701ms)
+ GET / 200 in 164ms (next.js: 14ms, application-code: 151ms)
+ GET / 200 in 101ms (next.js: 13ms, application-code: 88ms)
+ GET / 200 in 58ms (next.js: 10ms, application-code: 48ms)
+ GET / 200 in 52ms (next.js: 6ms, application-code: 46ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+ GET / 200 in 353ms (next.js: 211ms, application-code: 142ms)
+[contact] sent: 7aef335c-2428-46c4-b8de-a4aa2576812e
+ POST /api/contact 200 in 4.8s (next.js: 2.6s, application-code: 2.2s)
+ GET / 200 in 214ms (next.js: 16ms, application-code: 198ms)
+ GET / 200 in 150ms (next.js: 24ms, application-code: 126ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+ GET / 200 in 353ms (next.js: 263ms, application-code: 89ms)
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[browser] THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
