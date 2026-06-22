@@ -1,5 +1,5 @@
 import { Resend } from "resend";
-
+export const runtime = 'edge';
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /** Escape user input before dropping it into the HTML email. */
