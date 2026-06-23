@@ -15,9 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UIM — Unseen Infrastructure",
+  title: "UIM",
   description:
     "UIM builds the unseen infrastructure that powers the digital world.",
+  icons: {
+    icon: "/uim-icon.png",
+    shortcut: "/uim-icon.png",
+    apple: "/uim-icon.png",
+  },
 };
 
 export default function RootLayout({
