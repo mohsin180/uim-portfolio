@@ -28,15 +28,16 @@ export default function HeroCanvas({
         antialias: true,
         alpha: false,
         powerPreference: "high-performance",
+        toneMappingExposure: 1.2,
       }}
     >
       <ProgressContext.Provider value={progress}>
-        <color attach="background" args={["#e7e6e3"]} />
-        <fog attach="fog" args={["#e7e6e3", 18, 44]} />
+        <color attach="background" args={["#ffffff"]} />
+        <fog attach="fog" args={["#ffffff", 24, 52]} />
 
-        <ambientLight intensity={0.85} />
-        <directionalLight position={[5, 8, 6]} intensity={1.6} color="#ffffff" />
-        <pointLight position={[-7, -3, 4]} intensity={10} color="#3f86ff" />
+        <ambientLight intensity={1.0} />
+        <directionalLight position={[5, 8, 6]} intensity={2.0} color="#ffffff" />
+        <pointLight position={[-7, -3, 4]} intensity={14} color="#3f86ff" />
 
         <CameraRig />
 

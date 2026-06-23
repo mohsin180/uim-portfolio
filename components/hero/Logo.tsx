@@ -36,8 +36,8 @@ const logoFragment = /* glsl */ `
 
     // On the light room palette the mark reads in its real colours; a touch of
     // extra depth keeps it crisp against the warm-white background.
-    vec3 col = tex.rgb * 0.92;
-    col += tex.rgb * uGlow * 0.06;
+    vec3 col = tex.rgb * 1.06;
+    col += tex.rgb * uGlow * 0.1;
 
     gl_FragColor = vec4(col, alpha * uReveal * uFade);
   }

@@ -15,11 +15,11 @@ export default function Effects({ quality }: { quality: Quality }) {
   return (
     <EffectComposer multisampling={quality.tier === "desktop" ? 2 : 0}>
       <Bloom
-        intensity={0.12}
-        luminanceThreshold={0.96}
-        luminanceSmoothing={0.2}
+        intensity={0.32}
+        luminanceThreshold={0.85}
+        luminanceSmoothing={0.25}
         mipmapBlur
-        radius={0.5}
+        radius={0.6}
       />
       {quality.dof ? (
         <DepthOfField
@@ -30,9 +30,9 @@ export default function Effects({ quality }: { quality: Quality }) {
       ) : (
         <></>
       )}
-      <Vignette eskil={false} offset={0.4} darkness={0.35} />
+      <Vignette eskil={false} offset={0.55} darkness={0.12} />
       {quality.noise ? (
-        <Noise premultiply blendFunction={BlendFunction.OVERLAY} opacity={0.045} />
+        <Noise premultiply blendFunction={BlendFunction.OVERLAY} opacity={0.015} />
       ) : (
         <></>
       )}

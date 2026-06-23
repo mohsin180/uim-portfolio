@@ -56,15 +56,12 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-[100svh] w-full overflow-hidden bg-[#e7e6e3]"
+      className="relative h-[100svh] w-full overflow-hidden bg-white"
     >
       {/* WebGL universe */}
       <div ref={sceneRef} className="absolute inset-0">
         {mounted && <HeroCanvas progress={progress} quality={quality} />}
       </div>
-
-      {/* Soft edge framing to match the room's clean light feel */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_58%,_rgba(20,23,27,0.08)_100%)]" />
 
       {/* Overlay copy (logo itself lives in the 3D scene as the focal point) */}
       <div

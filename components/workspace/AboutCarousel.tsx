@@ -27,38 +27,35 @@ const CARDS: Card[] = [
   },
   {
     kind: "dev",
-    subtitle: "Founder & Lead Engineer",
-    title: "Ali Hamza",
-    imgUrl:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&h=800&fit=crop&q=80",
+    subtitle: "Client Lead & Full-Stack Developer",
+    title: "Umer Bhatti",
+    imgUrl: "/team/umer-bhatti.png",
     paragraphs: [
-      "Ali leads the technical direction at UIM, turning complex requirements into reliable, scalable products. With years of full-stack experience, he architects the systems that power everything we build.",
-      "He specializes in modern web architecture, performance optimization, and taking products from zero to launch. Ali is hands-on with every project, making sure the foundation is solid and the code stays clean.",
-      "When he isn't architecting systems, he's exploring new technologies and refining the way we build — always pushing for faster, simpler, and more maintainable solutions that stand the test of time.",
+      "Umer is the first person you talk to at UIM. He sits down with every client to understand the real problem, translate it into a clear plan, and make sure expectations and timelines line up from day one.",
+      "He pairs that client focus with hands-on engineering, building full-stack features himself so nothing is lost between the conversation and the code. Umer keeps projects moving and communication honest at every step.",
+      "From the first call to launch and beyond, he stays your point of contact — making sure what we ship is exactly what your business needs, and that you always know where things stand.",
     ],
   },
   {
     kind: "dev",
-    subtitle: "Product & Frontend Engineer",
-    title: "Hassan Raza",
-    imgUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&q=80",
+    subtitle: "Marketing Strategist & Developer",
+    title: "Ikram Javed",
+    imgUrl: "/team/ikram-javed.png",
     paragraphs: [
-      "Hassan crafts the interfaces and experiences that make our products feel fast, polished, and effortless. He bridges design and engineering, turning ideas into pixel-perfect, interactive realities.",
-      "He specializes in React, motion design, and premium user experiences with attention to every detail — from subtle micro-interactions to fully responsive layouts that feel right on any device.",
-      "Hassan obsesses over how things feel, not just how they look, making sure every product we ship is a genuine joy to use across every screen size and platform.",
+      "Ikram makes sure the products we build actually reach the people they're meant for. He owns marketing strategy at UIM — positioning, messaging, and growth — turning great software into results you can measure.",
+      "He's also a developer, so his marketing decisions are grounded in how the product really works. That blend lets him build landing pages, campaigns, and funnels that are fast, on-brand, and built to convert.",
+      "Ikram bridges the gap between engineering and growth, making sure every product launches with a clear story and the momentum it deserves.",
     ],
   },
   {
     kind: "dev",
-    subtitle: "Backend & DevOps Engineer",
-    title: "Bilal Ahmed",
-    imgUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=800&fit=crop&q=80",
+    subtitle: "Developer & Social Media Manager",
+    title: "Mohsin Karim",
+    imgUrl: "/team/mohsin-karim.png",
     paragraphs: [
-      "Bilal engineers the APIs, databases, and infrastructure that keep everything secure, performant, and always online. He is the backbone behind our most demanding, real-time systems.",
-      "He specializes in scalable backend architecture, cloud infrastructure, and automation — hardening every layer so our products stay fast and reliable as they grow in users and data.",
-      "From database design to deployment pipelines, Bilal makes sure that what we build runs smoothly under pressure, at any scale, with rock-solid security baked in from day one.",
+      "Mohsin builds the features that make our products work and manages the social presence that keeps UIM visible. He moves comfortably between writing clean, reliable code and shaping how we show up online.",
+      "As a developer, he focuses on solid implementation and attention to detail; as social media manager, he plans content, engages our audience, and keeps the brand consistent across every channel.",
+      "That dual role lets Mohsin connect what we build with the people who follow our work — turning real engineering progress into a story worth sharing.",
     ],
   },
 ];
@@ -88,7 +85,7 @@ export default function AboutCarousel() {
         <Chevron dir="right" />
       </button>
 
-      <div className="relative h-[28rem] overflow-hidden rounded-[2rem] sm:h-[27rem]">
+      <div className="relative h-[36rem] overflow-hidden rounded-[2rem] sm:h-[34rem] md:h-[27rem]">
         <AnimatePresence custom={dir} initial={false} mode="wait">
           <motion.div
             key={active}
@@ -103,7 +100,7 @@ export default function AboutCarousel() {
             {/* Solid white content card */}
             <div className="flex h-full w-full flex-col overflow-hidden rounded-[2rem] border border-white/60 bg-white/55 shadow-[0_30px_90px_rgba(0,0,0,0.18)] ring-1 ring-black/[0.05] backdrop-blur-2xl md:flex-row">
               {/* left: laptop / photo */}
-              <div className="relative flex h-2/5 w-full shrink-0 items-center justify-center overflow-hidden border-b border-white/40 bg-gradient-to-br from-white/50 to-white/10 md:h-full md:w-[42%] md:border-b-0 md:border-r">
+              <div className="relative flex h-[62%] w-full shrink-0 items-center justify-center overflow-hidden border-b border-white/40 bg-gradient-to-br from-white/50 to-white/10 md:h-full md:w-[42%] md:border-b-0 md:border-r">
                 {card.kind === "about" ? (
                   <Laptop3D />
                 ) : (
@@ -114,7 +111,8 @@ export default function AboutCarousel() {
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = "none";
                     }}
-                    className="h-full w-full object-cover object-center"
+                    style={{ objectPosition: "50% 18%" }}
+                    className="h-full w-full object-cover"
                   />
                 )}
               </div>
@@ -122,7 +120,7 @@ export default function AboutCarousel() {
               {/* right: scrollable content */}
               <div
                 data-lenis-prevent
-                className="ws-scroll h-3/5 w-full overflow-y-auto bg-white px-7 py-7 md:h-full md:w-[58%] md:px-9 md:py-9"
+                className="ws-scroll h-[38%] w-full overflow-y-auto bg-white px-7 py-7 md:h-full md:w-[58%] md:px-9 md:py-9"
               >
                 <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.35em] text-uim-blue/90">
                   {card.subtitle}

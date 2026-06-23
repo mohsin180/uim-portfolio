@@ -3,12 +3,12 @@
 import { RoundedBox, ContactShadows } from "@react-three/drei";
 import * as THREE from "three";
 
-/* Room-matched palette (same tones as the workspace corridor). */
-const FLOOR = "#e3e2de";
-const WALL = "#dcdbd7";
-const WALL_SIDE = "#d8d7d3";
+/* Bright white room — near-white tones keep just enough depth to read. */
+const FLOOR = "#f6f6f5";
+const WALL = "#ffffff";
+const WALL_SIDE = "#fafafa";
 const STRIP = "#0d0d0d";
-const DESK_TOP = "#ece9e4";
+const DESK_TOP = "#ffffff";
 const METAL = "#c9ccd2";
 const DARK = "#23262b";
 const SCREEN = "#243049";
